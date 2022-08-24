@@ -19,6 +19,7 @@ const useFetch = (url) => {
                 .then((data) => {
                     // console.log(data);
                     setData(data);
+                    console.log(data);
                     setIsPending(false);
                     setError(null);
                 })
