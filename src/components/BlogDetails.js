@@ -8,11 +8,11 @@ const BlogDetails = () => {
         data: blog,
         error,
         isPending,
-    } = useFetch(`https://fake-server-app-22.herokuapp.com/blogs` + id);
+    } = useFetch(`https://fake-server-dojo-blog.vercel.app/blogs` + id);
     const history = useNavigate();
 
     const handleClick = () => {
-        fetch("https://fake-server-app-22.herokuapp.com/blogs" + blog.id, {
+        fetch("https://fake-server-dojo-blog.vercel.app/blogs" + blog.id, {
             method: "DELETE",
         }).then(() => {
             history("/");

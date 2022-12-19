@@ -14,7 +14,7 @@ const Create = () => {
         setIsPending(true);
         // console.log(blog);
 
-        fetch("https://fake-server-app-22.herokuapp.com/blogs", {
+        fetch("https://fake-server-dojo-blog.vercel.app/blogs", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(blog),

@@ -7,7 +7,7 @@ const Home = () => {
         data: blogs,
         isPending,
         error,
-    } = useFetch("https://fake-server-app-22.herokuapp.com/blogs");
+    } = useFetch("https://fake-server-dojo-blog.vercel.app/blogs");
 
     return (
         <div className="home">
